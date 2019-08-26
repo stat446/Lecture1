@@ -1,0 +1,189 @@
+---
+title: "Lecture 1 "
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+```
+
+
+\subsection*{Introduction to Sampling}
+**Sampling** is a process that 
+		\vfill
+ Two important sampling questions: 
+		\begin{enumerate}
+		  \item What 
+		  \vfill
+		  \item How 
+		  \vfill
+		\end{enumerate} 
+		Question (1) is the \hspace{4cm} and (2) is the \hspace{4cm}
+		
+The design problem involves questions about the
+\vfill
+		\vfill
+	{\bf Example:} Suppose the goal is to find the average age of students enrolled at MSU.
+		
+- Can we use the collected ages from our course survey, why or why not?
+			\vfill
+- Now devise a strategy to collect this information. Consider how students will be selected, how many students to question, and how to ask students their age.
+\vfill
+\newpage
+
+By properly addressing the design problem, the analysis problem will often not be difficult. In other words, given the design, the researcher should know the format of the analysis prior to data collection.
+\vfill
+\subsection*{Populations and Sampling Units} 
+
+\noindent A **survey** is 
+\vfill
+
+A **census** is 
+\vfill
+
+An **observation unit** is 
+\vfill
+
+The **target population** is 
+\vfill
+
+The **sampled population** or study population 
+\vfill		
+
+Now back to the age of MSU students. What is the target population? Discuss a situation where the target population does not match the sampled population.
+\vfill
+
+
+\vfill
+
+\newpage
+It is certainly desirable for the target and study populations to match. However, this is often not the case. When they do not match, it may not be possible to make statements about the target population from data collected on the study population. 
+\vfill
+\vfill
+Similarly the *scope of inference* is restricted to the study population in our hypothetical data collection studies.
+
+
+\vfill
+The potential members or units of a sample 
+\vfill
+A **sampling frame** is a 
+\vfill
+
+Consider three sampling schemes: one that calls dorm rooms and asks the person answering the phone their age, one administered in classes, and one that interviews students based on a master list from the registrar. What are the sampling units and sampling frame in each situation?
+\vfill
+\vfill
+Note: At this point we clarify the distinction between *individuals in a population* and *sampling units in the sampling frame.*
+\vfill
+If the sampling frame consists of individuals in the study population then the sampling units and the individuals in the study population are the same.
+\vfill
+However, a sampling plan could consist of sampling subgroups of individuals. In this case, the sampling units are subgroups of individuals.
+\vfill
+
+\vfill For many populations, the sampling unit is obvious. 
+\vfill
+\newpage
+For other populations, the sampling unit may not be obvious. For example, when surveying a geographical region, you may have to use a map to identify what is the basic sampling unit. Consider an experiment designed to assess the effect of pine beetle on Montana forests, how might you conduct this study?
+\vfill
+
+This type of sampling introduces a number of problems, namely:
+
+1. The 
+\vfill
+
+2. A 
+\vfill
+
+3. A 
+\vfill
+
+\subsection*{Estimates vs. Estimators}
+The goal of sampling is to make conclusions about some characteristics of interest for one or more populations of interest based on the data collected. 
+\vfill
+
+Using our class data on the number of hours spent at Bridger Bowl last winter answer the following questions:
+	\begin{enumerate}
+		\item What is the sampled population in this case?\\
+		\\
+		\item What is the sampling frame for this problem?\\
+		\\
+		\item How would you estimate the average number of hours for the class?\\
+		\\
+	\end{enumerate}
+A **parameter** is a 
+\vfill
+A  **statistic**
+\vfill
+
+In general, the value of the population parameter is unknown. Statistics computed from data can provide information about the unknown parameter.
+\vfill
+
+The process of estimating a population parameter by a statistic 
+\vfill
+\newpage
+
+*Prior to data collection*, a sample statistic is a random variable and is called a 
+\vfill
+
+*After collecting a sample* and conditional on the data, a sample statistic 
+\vfill
+
+Using data from our class survey, what is the point estimator and point estimate for the number of hours spent at Bridger Bowl this winter?
+\vfill
+
+Later in the course we will discuss interval estimation in the form of confidence intervals to express uncertainty in point estimates.
+\vfill
+
+The researcher's sampling goal is to collect a sample that is 
+\vfill
+
+Accuracy is related to 
+\vfill
+\newpage
+
+\subsection*{Sampling and Estimation Concepts}
+In one of the most common sampling situations, we assume the population consists of a finite number $N$ of sampling units. 
+\vfill
+
+Associated with each of the $N$ units is a 
+\vfill
+
+Each $y$-value is considered a fixed quantity representing that unit. In other words, we assume the sequence of population $y$-values ($y_1, y_2, ...,y_N$) is fixed.
+\vfill
+
+For each sampled unit there will be
+\vfill 
+
+A **sampling design** is 
+\vfill
+
+The classical sampling designs 
+\vfill
+
+Sampling designs that are based on planned randomness are called **probability samples.** 
+\vfill
+
+When taking a simple random sample (SRS) of size $n$, the possible samples consist of $n$ distinct units selected from the population of $N$ units, and $P(\mathcal{S})$ is the same for every possible sample $\mathcal{S}$. Thus $P(\mathcal{S})$= 1/(the total number of unique samples of size $n$)
+\vfill
+Sketch out pseudocode to sample 5 members of the class to give their course presentations on Friday.
+\vfill
+\vfill
+
+\newpage
+The typical inference problems in sampling are 
+
+1. the 
+\vfill
+2.  an 
+\vfill
+This variability assessment is often an 
+\vfill
+
+Ideally, we would like a sampling strategy which will yield samples that produce estimates with small variability that are centered around the true value. 
+\vfill
+
+Thus, by choosing an appropriate sampling design and estimation method, the researcher can often obtain unbiased estimates without making additional assumptions about the population.
+\vfill
+
+Selection by use of probability samples removes intentional or unintentional human sources of bias (such as the tendency to select units with larger or smaller than average values). Use of probability samples to generate a representative sample is especially desirable when there are parties with conflicting interests (e.g., a fish study that will be used by fishery management, commercial users, and environmental groups).
+
